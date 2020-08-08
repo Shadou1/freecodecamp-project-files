@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+
+    --light-orange: #e8ddc9;
+    --almost-white: #ededff;
+}
+
+body {
+    margin: 0px;
+
+    font-family: Cambria, Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: var(--almost-white);
+
+    background: var(--light-orange);
+    background-image: 
+    linear-gradient(
+      90deg,
+      rgba(113, 113, 207, 0.6),
+      rgba(70, 70, 146, 0.7)
+    ),
+    url(https://i.ibb.co/GpW9v4P/screenshot-2020-07-22-17-05-20.png);
+    /* background-blend-mode: difference; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+
+input, select, textarea {
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+label, option, legend {
+    font-size: 2rem;
+}
+
+fieldset {
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+}
+
+button {
+    margin: 10px auto;
+    display: block;
+    font-size: 5rem;
+    border-radius: 50px;
+}
+
+#main {
+    margin: 100px auto;
+    max-width: 1000px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media(max-width: 700px) {
+    #main {
+        max-width: 500px;
+    }
+}
+
+#title {
+    margin: 0px 0px;
+
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+#description {
+    margin: 10px auto 30px auto;
+    max-width: 600px;
+
+    text-align: justify;
+    font-size: 2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+@media(max-width: 700px) {
+    #description {
+        padding: 0px 15px;
+    }
+}
+
+#survey-form {
+    border: 10px solid rgba(44, 44, 175, 0);
+    border-radius: 1%;
+    background: rgba(52, 52, 134, 0.8);
+}
+
+@media(max-width: 750px) {
+    #survey-form {
+        
+    }
+}
+
+.horizontal-fields {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    /* margin: 10px auto 30px auto; */
+}
+
+@media(max-width: 700px) {
+    .horizontal-fields {
+        flex-direction: column;
+    }
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+}
+
+#how-often {
+    /* flex: 0.8 0 300px; */
+}
+
+.horizontal-fields-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+@media(max-width: 700px) {
+    .horizontal-fields-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#opinion {
+    display: block;
+}

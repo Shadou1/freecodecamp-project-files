@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landig Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header id="header">
+        <div id="header-div">
+            <img id="header-img"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmoA5ZVg0nOI2EtGuZg64FpCYXR_uIycUJrQ&usqp=CAU"
+                alt="Teeworlds points logo showing a tee.">
+            <h1>Teeworlds Points Market</h1>
+        </div>
+
+        <nav id="nav-bar">
+            <a class="nav-link" href="#p-about">About</a>
+            <a class="nav-link" href="#buy-sell-points-section">Buy Points</a>
+            <a class="nav-link" href="#form">Subscribe</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h2>
+            <span class="tee-pnts-market">Teeworlds Points Market&copy</span> is a place where you can buy and sell Teeworlds points
+        </h2>
+
+        <section>
+
+            <p id="p-about">
+                Making points in Teeworlds nowdays is not an easy task. With all the masochistic mapmakers
+                and deprived map parts you are certain to go mentally insane if you try to accrue points by yourself.
+                But worry not cause we've got a solution for you. Make Teeworlds points without having to do
+                a single hook. Just buy them on this platform. You can also sell your points here.
+            </p>
+
+            <div id="video-div">
+                <figure>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qqJTTRFCH8U" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <figcaption>Kezo loses points</figcaption>
+                </figure>
+        
+                <p>
+                    As you can see if you watched the video, gaining points is a real pain. Study even showed that
+                    tee's fail rate is inversely correspondent to their life expectancy. So you better not fail, or
+                    better yet just not risk it and buy your points here safely.
+                </p>
+            </div>
+
+            <div id="features">
+                <h3>
+                    Our organization offers many advantages to Teeworlds players seeking to increase their points count:
+                </h3>
+        
+                <div>
+                    <h4>
+                        Clean points only.
+                    </h4>
+                    <p>
+                        No ddmax or gores style maps will be completed to get you points.
+                    </p>
+                </div>
+        
+                <div>
+                    <h4>
+                        Your reputation will remain intact.
+                    </h4>
+                    <p>
+                        Our operatives are able to impeccably fake any personality,
+                        even as unique as yours is.
+                    </p>
+                </div>
+        
+                <div>
+                    <h4>
+                        Automatic blockage. 
+                    </h4>
+                    <p>
+                        If we ever see players bearing nicks such as <span id="span-kezo">kezo</span> or <span id="span-fapman">FapMan</span>,
+                        we will block them by your name, so that you are revered even higher.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        
+        <section id="buy-sell-points-section">
+            
+            <div class="product-container">
+                <div class="h3-container">
+                    <h3>Buy points</h3>
+                </div>
+                <label for="points-buy-amount">How many points:</label>
+                <input type="number" name="buy-amount" id="points-buy-amount" min="0" onchange="onBuyChange()">
+                <label for="points-buy-price">Your price:</label>
+                <input type="text" name="buy-price" id="points-buy-price" readonly>
+                <button class="buy-button">Buy</button>
+            </div>
+            
+            <div class="product-container">
+                <div class="h3-container">
+                    <h3>Sell points for a fair price</h3>
+                </div>
+                <label for="points-sell-abount">Number of points to sell:</label>
+                <input type="number" name="sell-amount" id="points-sell-amount" min="0" onchange="onSellChange()">
+                <label for="points-sell-price">Price the buyer pays:</label>
+                <input type="text" name="sell-price" id="points-sell-price" readonly min="0">
+                <button class="sell-button">Sell</button>
+            </div>
+            
+            <div class="product-container">
+                <div class="h3-container">
+                    <h3>Request <span id="adr4">Adrenaline 4</span> map completion on your account</h3>
+                </div>
+                <label for="account-name">Your account nickname:</label>
+                <input type="text" name="account-name" id="account-name">
+                <button class="adr4-button">Hook</button>
+            </div>
+            
+        </section>
+        
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <p>Subscribe to get free advice about acquiring Teeworlds Points</p>
+            <label for="email">Your email:</label>
+            <input type="email" name="email" id="email" placeholder="yourteemail@tee.org" required>
+            <input id="submit" type="submit" value="Acquire Points">
+        </form>
+
+    </main>
+
+    <footer id="footer">
+        <div id="footer-links">
+            <a href="#">Hook</a>
+            <a href="#">Edge</a>
+            <a href="#">Aled</a>
+        </div>
+        <p>
+            Copyright 2020, Shadou Otetc
+        </p>
+    </footer>
+
+    <script>
+        function onBuyChange() {
+            let x = document.getElementById("points-buy-amount").value * 9.99;
+            document.getElementById("points-buy-price").value = "$" + x;
+        }
+
+        function onSellChange() {
+            let x = document.getElementById("points-sell-amount").value * 0.0049;
+            document.getElementById("points-sell-price").value = "$" + x;
+        }
+    </script>
+
+    </body>
+
+</html>

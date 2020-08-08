@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>What kind of tee are you?</title>
+</head>
+<body>
+
+    <main id="main">
+
+        <h1 id="title">What kind of tee are you?</h1>
+        <p id="description">
+            Complete this quick survey to find out which kind of tee are you. We use extensive
+            data gathered in many years of teeworlds experience to accurately find out your
+            tee essense through simple questions.
+        </p>
+
+        <form id="survey-form" action="">
+
+            <div class="horizontal-fields">
+                <div id="info">
+                    <label id="name-label" for="name">Teeworlds nickname:</label>
+                    <input id="name" name="name" type="text" required
+                        placeholder="Your Teeworlds nickname">
+        
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" name="email" type="email" required
+                        placeholder="youremail@somemail.com">
+        
+                    <label id="number-label" for="email">Teeworlds experience (years):</label>
+                    <input id="number" name="tee-exp" type="number" min="0" max="13"
+                        placeholder="0-13">
+
+                    <label id="dropdown-label" for="dropdown">Your favourite Teeworlds server type:</label>
+                    <select id="dropdown" name="server-type">
+                        <option>--Choose--</option>
+                        <option>DDrace</option>
+                        <option>Solo/Race</option>
+                        <option>Dummy</option>
+                        <option>FNG</option>
+                        <option>DM</option>
+                        <option>CTF</option>
+                        <option>zCatch</option>
+                        <option>City</option>
+                        <option>Infection</option>
+                        <option>Sports</option>
+                        <option>Block</option>
+                    </select>
+
+                </div>
+
+                <fieldset id=how-often>
+                    <legend>How often do you play Teeworlds?</legend>
+                    <div id="how-often-radios">
+                        <input type="radio" id="playtimeChoice1"
+                        name="playtime" value="every-day" checked>
+                        <label for="playtimeChoice1">Every day</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice2"
+                        name="playtime" value="every-other-day">
+                        <label for="playtimeChoice2">Every other day</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice3"
+                        name="playtime" value="couple-a-week">
+                        <label for="playtimeChoice3">Couple times a week</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice4"
+                        name="playtime" value="every-week">
+                        <label for="playtimeChoice4">Every week</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice5"
+                        name="playtime" value="every-other-week">
+                        <label for="playtimeChoice5">Every other week</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice6"
+                        name="playtime" value="every-month">
+                        <label for="playtimeChoice6">Every month</label>
+                        <div></div>
+
+                        <input type="radio" id="playtimeChoice6"
+                        name="playtime" value="every-year">
+                        <label for="playtimeChoice7">Every year</label>
+                        <div></div>
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <div class="horizontal-fields-2">
+                <fieldset>
+                    <legend>How many teeworlds friends do you have?</legend>
+                    <div>
+                        <input type="radio" id="friendsChoice1"
+                        name="friends-num" value="0" checked>
+                        <label for="friendsChoice1">Zero</label>
+                        <div></div>
+
+                        <input type="radio" id="friendsChoice2"
+                        name="friends-num" value="1">
+                        <label for="friendsChoice2">One</label>
+                        <div></div>
+
+                        <input type="radio" id="friendsChoice3"
+                        name="friends-num" value="2">
+                        <label for="friendsChoice3">Two</label>
+                        <div></div>
+
+                        <input type="radio" id="friendsChoice4"
+                        name="friends-num" value="couple">
+                        <label for="friendsChoice4">Couple</label>
+                        <div></div>
+
+                        <input type="radio" id="friendsChoice5"
+                        name="friends-num" value="tens">
+                        <label for="friendsChoice5">Tens</label>
+                        <div></div>
+
+                        <input type="radio" id="friendsChoice6"
+                        name="friends-num" value="dozen">
+                        <label for="friendsChoice6">Dozen</label>
+                        <div></div>
+
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Choose your favourite DDNet server types</legend>
+                    <div>
+                        <input type="checkbox" id="favChoice1"
+                        name="favourite-ddnet-server-types" value="novice">
+                        <label for="favChoice1">Novice</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice2"
+                        name="favourite-ddnet-server-types" value="moderate">
+                        <label for="favChoice2">Moderate</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice3"
+                        name="favourite-ddnet-server-types" value="brutal">
+                        <label for="favChoice3">Brutal</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice4"
+                        name="favourite-ddnet-server-types" value="insane">
+                        <label for="favChoice4">Insane</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice5"
+                        name="favourite-ddnet-server-types" value="dummy">
+                        <label for="favChoice5">Dummy</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice6"
+                        name="favourite-ddnet-server-types" value="ddmax">
+                        <label for="favChoice6">DDmaX</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice7"
+                        name="favourite-ddnet-server-types" value="oldschool">
+                        <label for="favChoice7">Oldschool</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice8"
+                        name="favourite-ddnet-server-types" value="solo">
+                        <label for="favChoice8">Solo</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice9"
+                        name="favourite-ddnet-server-types" value="race">
+                        <label for="favChoice9">Race</label>
+                        <div></div>
+                        
+                        <input type="checkbox" id="favChoice10"
+                        name="favourite-ddnet-server-types" value="fun">
+                        <label for="favChoice10">Fun</label>
+                        <div></div>
+
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>Choose your most hated ddrace map features</legend>
+                    
+                    <input type="checkbox" id="hatedChoice1"
+                    name="hated-features" value="dummy-drag">
+                    <label for="hatedChoice1">Dummy drag</label>
+                    <div></div>
+                    
+                    <input type="checkbox" id="hatedChoice2"
+                    name="hated-features" value="edge">
+                    <label for="hatedChoice2">Edge</label>
+                    <div></div>
+                    
+                    <input type="checkbox" id="hatedChoice3"
+                    name="hated-features" value="aled">
+                    <label for="hatedChoice3">Aled</label>
+                    <div></div>
+                    
+                    <input type="checkbox" id="hatedChoice4"
+                    name="hated-features" value="triple">
+                    <label for="hatedChoice4">Triple grenade jump</label>
+                    <div></div>
+                    
+                    <input type="checkbox" id="hatedChoice5"
+                    name="hated-features" value="hook-fly">
+                    <label for="hatedChoice5">Hook Fly</label>
+                    <div></div>
+                    
+                    <input type="checkbox" id="hatedChoice6"
+                    name="hated-features" value="shotgun">
+                    <label for="hatedChoice6">Shotgun</label>
+                    <div></div>
+
+                    <input type="checkbox" id="hatedChoice7"
+                    name="hated-features" value="laser">
+                    <label for="hatedChoice7">Laser</label>
+                    <div></div>
+                    
+                </fieldset>
+            </div>
+
+            <div>
+                <label for="opinion">What is your opinion on Skittles Teeworlds clan?</label>
+                <textarea id="opinion" name="opinion" cols="30" rows="5">I think that Skittles is the essential Teeworlds clan without which Teeworlds wouldn't be the same.
+                </textarea>
+            </div>
+            
+            <button id="submit" type="submit">Send results to Shadou</button>
+
+        </form>
+
+    </main>
+
+</body>
+</html>

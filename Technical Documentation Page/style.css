@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap'); /* regular */
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap'); /* heading */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /* code */
+
+html {
+    font-size: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.8rem;
+}
+
+* {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, header {
+    font-family: Cardo, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    margin: 25px 0px;
+    margin-right: 50px;
+    
+    font-size: 3rem;
+
+    border-bottom: solid 5px black;
+}
+
+@media only screen and (max-width: 815px) {
+    header {
+        margin: 25px 0px;
+    }
+}
+
+h2 {
+    padding-left: 15px;
+
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 815px) {
+    h2 {
+        padding-left: 5px;
+    }
+}
+
+ul {
+    margin-bottom: 25px;
+    padding-left: 50px;
+}
+
+@media only screen and (max-width: 815px) {
+    ul {
+        margin-bottom: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+li {
+    margin: 20px 0px;
+
+    /* font-size: 1.8rem; */
+}
+
+@media only screen and (max-width: 815px) {
+    li {
+        margin: 10px 0px;
+    }
+}
+
+a:any-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: #111111;
+}
+
+p {
+    margin-bottom: 20px; 
+    padding-left: 25px;
+    padding-right: 50px;
+    
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    line-height: 3rem;
+}
+
+@media only screen and (max-width: 815px) {
+    p {
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+code {
+    font-family: "Press Start 2P", sans-serif;
+}
+
+.code-block {
+    display: block;
+    margin: 25px 50px;
+    padding: 25px 10px;
+
+    font-size: 1.6rem;
+
+    background-color: #EEEEEE;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 815px) {
+    .code-block {
+        margin: 10px 5px;
+        padding: 5px;
+    }
+}
+
+.content-div {
+    position: relative;
+
+    display: flex;
+}
+
+#navbar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+
+    margin-right: 50px;
+
+    height: 100%;
+
+    background-color: #EDEDED;
+    border: 1px solid darkgray;
+}
+
+@media only screen and (max-width: 815px) {
+    #navbar {
+        position: static;
+        margin: 5px;
+
+        height: 300px;
+
+        text-align: center;
+    }
+}
+
+/* Bad design */
+
+#navbar div {
+    height: 80%;
+    overflow-y: auto;
+}
+
+/* Even worse design */
+
+@media only screen and (max-width: 815px) {
+    #navbar div{
+        height: 229px;
+    }
+}
+
+#navbar header{
+    margin: 0;
+    padding: 15px;
+
+    text-align: center;
+
+    border-bottom: initial;
+}
+
+.nav-link {
+    padding: 20px;
+    
+    display: block;
+
+    border-bottom: 1px solid darkgray;
+}
+
+@media only screen and (max-width: 815px) {
+    .nav-link {
+        padding: 10px;
+    }
+}
+
+.nav-link:first-child {
+    border-top: 1px solid darkgray;
+}
+
+.nav-link:last-child {
+    /* border-bottom: none; */
+}
+
+#main-doc {
+    margin-left: 350px;
+    padding-top: 25px;
+
+    flex: 1 1;
+    
+    /* border: 1px solid darkgray; */
+}
+
+@media only screen and (max-width: 815px) {
+    #main-doc {
+        padding-top: 10px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    #main-doc {
+        margin: 0px;
+    }
+}
+
+#main-doc a {
+    text-decoration: underline;
+}
+
+
