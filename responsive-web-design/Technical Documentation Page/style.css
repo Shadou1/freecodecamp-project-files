@@ -17,6 +17,8 @@ body {
     padding: 0;
 }
 
+/* General elements */
+
 h1, h2, h3, h4, header {
     font-family: Cardo, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -34,6 +36,7 @@ header {
     border-bottom: solid 5px black;
 }
 
+/* Remove right margin for small screens */
 @media only screen and (max-width: 815px) {
     header {
         margin: 25px 0px;
@@ -47,6 +50,7 @@ h2 {
     font-size: 2.5rem;
 }
 
+/* Less padding for small screens */
 @media only screen and (max-width: 815px) {
     h2 {
         padding-left: 5px;
@@ -58,6 +62,7 @@ ul {
     padding-left: 50px;
 }
 
+/* Less margin for small screens */
 @media only screen and (max-width: 815px) {
     ul {
         margin-bottom: 20px;
@@ -131,6 +136,7 @@ code {
 }
 
 #navbar {
+    /* Fixed navbar so that it is always visible on the left of the screen*/
     position: fixed;
     top: 0px;
     left: 0px;
@@ -143,6 +149,7 @@ code {
     border: 1px solid darkgray;
 }
 
+/* For small screens unfix navbar so that it shows on the top of the screen */
 @media only screen and (max-width: 815px) {
     #navbar {
         position: static;
@@ -155,14 +162,12 @@ code {
 }
 
 /* Bad design */
-
 #navbar div {
     height: 80%;
     overflow-y: auto;
 }
 
 /* Even worse design */
-
 @media only screen and (max-width: 815px) {
     #navbar div{
         height: 229px;
@@ -196,9 +201,9 @@ code {
     border-top: 1px solid darkgray;
 }
 
-.nav-link:last-child {
-    /* border-bottom: none; */
-}
+/* .nav-link:last-child {
+    border-bottom: none;
+} */
 
 #main-doc {
     margin-left: 350px;
@@ -225,5 +230,3 @@ code {
 #main-doc a {
     text-decoration: underline;
 }
-
-

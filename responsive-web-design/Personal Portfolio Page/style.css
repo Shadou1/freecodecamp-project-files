@@ -29,6 +29,8 @@ body {
   text-align: center;
 }
 
+/* General elements */
+
 a:any-link {
   text-decoration: none;
   color: #111111;
@@ -45,6 +47,8 @@ p {
 a {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* Navbar */
 
 #navbar {
   position: fixed;
@@ -75,6 +79,7 @@ a {
   animation-duration: 0.25s;
 }
 
+/* Lesser padding and smaller font for small screens */
 @media(max-width: 600px) {
   #navbar > a {
     padding: 5px;
@@ -87,6 +92,7 @@ a {
   margin-right: 30px;
 }
 
+/* Small margin for small screens */
 @media(max-width: 600px) {
   #navbar > a:last-child {
     margin-right: 5px;
@@ -100,6 +106,8 @@ a {
 main {
   background-color: rgb(225, 225, 255);
 }
+
+/* Welcome section */
 
 #welcome-section {
   height: 100vh;
@@ -115,7 +123,7 @@ main {
       rgba(10, 10, 10, 1) 0%,
       rgba(100, 100, 150, 0.75) 70%,
       rgba(225, 225, 255, 1) 100%),
-    url("welcome_back.png");
+    url("https://raw.githubusercontent.com/Shadou1/freecodecamp-project-files/master/Responsive%20Web%20Design/Personal%20Portfolio%20Page/welcome_back.png");
 
   background-size: cover;
   background-position: center;
@@ -161,7 +169,10 @@ main {
   animation: welcome-p-back-anim 3s linear infinite;
 }
 
+/* Tooltip using ::after */
+
 #welcome-section > p::after {
+  /* Utilizing the contents of the info attribute */
   content: attr(info);
 
   position: absolute;
@@ -179,6 +190,8 @@ main {
   animation-duration: 0.5s;
   animation-fill-mode: forwards;
 }
+
+/* Various adjustments of the tooltip for the smaller screens */
 
 @media(max-width: 600px) {
   #welcome-section > p::after {
@@ -210,6 +223,8 @@ main {
 #welcome-section > p:hover::after {
   animation-name: p-after-anim;
 }
+
+/* Projects */
 
 #projects {
   margin: 0 auto;
@@ -243,6 +258,7 @@ img {
   gap: 30px;
 }
 
+/* Only one column on the smaller screens */
 @media(max-width: 900px) {
   .projects-grid{
     grid-template-columns: 1fr;
@@ -265,6 +281,7 @@ img {
   /* border: 5px solid black; */
 }
 
+/* Initially bigger project tile on smaller screens */
 @media(max-width: 900px) {
   .project-tile{
     max-width: 600px;
@@ -319,8 +336,84 @@ img {
   transform: translate(-50%, -50%);
 }
 
+/* Contacts */
+
 #contacts {
-  background: linear-gradient(
-    
-  );
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: 
+  linear-gradient(
+    rgba(225, 225, 255, 1) 0%,
+    rgba(100, 100, 150, 0.75) 70%,
+    rgba(10, 10, 10, 1) 100%),
+  url("https://raw.githubusercontent.com/Shadou1/freecodecamp-project-files/master/Responsive%20Web%20Design/Personal%20Portfolio%20Page/contacts_back.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#contacts > p {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#contacts-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#contacts-table > a {
+  margin: 30px;
+
+  font-size: 4rem;
+  animation-duration: 0.25s;
+}
+
+@keyframes contacts-anim {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+#contacts-table > a:hover {
+  animation-name: contacts-anim;
+}
+
+@media(max-height: 500px) {
+  #contacts-table > a {
+    font-size: 2rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  padding: 10px;
+
+  background-color: rgba(10, 10, 10, 1);
+}
+
+footer > p {
+  font-size: 2rem;
+  text-align: right;
+
+  color: white;
+}
+
+@media(max-width: 550px) {
+  footer > p {
+    font-size: 1.5rem;
+  }
+}
+
+footer > p > a:any-link{
+  color: white;
+  text-decoration: underline;
 }

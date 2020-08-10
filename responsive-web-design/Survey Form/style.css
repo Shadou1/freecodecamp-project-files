@@ -30,6 +30,8 @@ body {
     /* background-repeat: no-repeat; */
 }
 
+/* General elements styles */
+
 input, select, textarea {
     font-size: 2rem;
     border-radius: 5px;
@@ -62,6 +64,7 @@ button {
     flex-direction: column;
 }
 
+/* Change max width when the screen width is small */
 @media(max-width: 700px) {
     #main {
         max-width: 500px;
@@ -84,6 +87,7 @@ button {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
 }
 
+/* Reduce padding when the scren width is small */
 @media(max-width: 700px) {
     #description {
         padding: 0px 15px;
@@ -96,11 +100,11 @@ button {
     background: rgba(52, 52, 134, 0.8);
 }
 
-@media(max-width: 750px) {
+/* @media(max-width: 750px) {
     #survey-form {
         
     }
-}
+} */
 
 .horizontal-fields {
     display: flex;
@@ -121,9 +125,9 @@ button {
     flex-direction: column;
 }
 
-#how-often {
-    /* flex: 0.8 0 300px; */
-}
+/* #how-often {
+    flex: 0.8 0 300px;
+} */
 
 .horizontal-fields-2 {
     display: flex;
@@ -131,6 +135,7 @@ button {
     align-items: stretch;
 }
 
+/* Change flex direction to column when screen width is small */
 @media(max-width: 700px) {
     .horizontal-fields-2 {
         flex-direction: column;

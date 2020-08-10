@@ -20,7 +20,11 @@
         <form id="survey-form" action="">
 
             <div class="horizontal-fields">
+
+                <!-- General Info -->
+
                 <div id="info">
+
                     <label id="name-label" for="name">Teeworlds nickname:</label>
                     <input id="name" name="name" type="text" required
                         placeholder="Your Teeworlds nickname">
@@ -51,9 +55,13 @@
 
                 </div>
 
+                <!-- How often do you play Teeworlds? -->
+
                 <fieldset id=how-often>
                     <legend>How often do you play Teeworlds?</legend>
+
                     <div id="how-often-radios">
+
                         <input type="radio" id="playtimeChoice1"
                         name="playtime" value="every-day" checked>
                         <label for="playtimeChoice1">Every day</label>
@@ -88,15 +96,22 @@
                         name="playtime" value="every-year">
                         <label for="playtimeChoice7">Every year</label>
                         <div></div>
+
                     </div>
+                    
                 </fieldset>
 
             </div>
 
             <div class="horizontal-fields-2">
+
+                <!-- Teewolrds friends -->
+
                 <fieldset>
                     <legend>How many teeworlds friends do you have?</legend>
+
                     <div>
+
                         <input type="radio" id="friendsChoice1"
                         name="friends-num" value="0" checked>
                         <label for="friendsChoice1">Zero</label>
@@ -129,10 +144,14 @@
 
                     </div>
                 </fieldset>
-    
+
+                <!-- Favourite server types -->
+
                 <fieldset>
                     <legend>Choose your favourite DDNet server types</legend>
+
                     <div>
+
                         <input type="checkbox" id="favChoice1"
                         name="favourite-ddnet-server-types" value="novice">
                         <label for="favChoice1">Novice</label>
@@ -184,8 +203,11 @@
                         <div></div>
 
                     </div>
+
                 </fieldset>
-    
+
+                <!-- Least favourite map features -->
+
                 <fieldset>
                     <legend>Choose your most hated ddrace map features</legend>
                     
@@ -225,12 +247,17 @@
                     <div></div>
                     
                 </fieldset>
+
             </div>
 
+            <!-- Opinion on clan -->
+
             <div>
+
                 <label for="opinion">What is your opinion on Skittles Teeworlds clan?</label>
                 <textarea id="opinion" name="opinion" cols="30" rows="5">I think that Skittles is the essential Teeworlds clan without which Teeworlds wouldn't be the same.
                 </textarea>
+
             </div>
             
             <button id="submit" type="submit">Send results to Shadou</button>

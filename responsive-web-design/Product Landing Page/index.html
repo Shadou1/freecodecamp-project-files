@@ -11,6 +11,7 @@
 <body>
 
     <header id="header">
+
         <div id="header-div">
             <img id="header-img"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQmoA5ZVg0nOI2EtGuZg64FpCYXR_uIycUJrQ&usqp=CAU"
@@ -23,12 +24,14 @@
             <a class="nav-link" href="#buy-sell-points-section">Buy Points</a>
             <a class="nav-link" href="#form">Subscribe</a>
         </nav>
+
     </header>
 
     <main>
 
         <h2>
-            <span class="tee-pnts-market">Teeworlds Points Market&copy</span> is a place where you can buy and sell Teeworlds points
+            <span class="tee-pnts-market">Teeworlds Points Market&copy</span> is a place where you can buy and sell
+            Teeworlds points
         </h2>
 
         <section>
@@ -40,26 +43,31 @@
                 a single hook. Just buy them on this platform. You can also sell your points here.
             </p>
 
+            <!-- Video section -->
             <div id="video-div">
+
                 <figure>
-                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qqJTTRFCH8U" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qqJTTRFCH8U"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <figcaption>Kezo loses points</figcaption>
                 </figure>
-        
+
                 <p>
                     As you can see if you watched the video, gaining points is a real pain. Study even showed that
                     tee's fail rate is inversely correspondent to their life expectancy. So you better not fail, or
                     better yet just not risk it and buy your points here safely.
                 </p>
+
             </div>
 
+            <!-- Features section -->
             <div id="features">
+
                 <h3>
                     Our organization offers many advantages to Teeworlds players seeking to increase their points count:
                 </h3>
-        
+
                 <div>
                     <h4>
                         Clean points only.
@@ -68,7 +76,7 @@
                         No ddmax or gores style maps will be completed to get you points.
                     </p>
                 </div>
-        
+
                 <div>
                     <h4>
                         Your reputation will remain intact.
@@ -78,23 +86,25 @@
                         even as unique as yours is.
                     </p>
                 </div>
-        
+
                 <div>
                     <h4>
-                        Automatic blockage. 
+                        Automatic blockage.
                     </h4>
                     <p>
-                        If we ever see players bearing nicks such as <span id="span-kezo">kezo</span> or <span id="span-fapman">FapMan</span>,
+                        If we ever see players bearing nicks such as <span id="span-kezo">kezo</span> or <span
+                            id="span-fapman">FapMan</span>,
                         we will block them by your name, so that you are revered even higher.
                     </p>
                 </div>
+
             </div>
 
         </section>
 
-        
+        <!-- Buy and sell points section -->
         <section id="buy-sell-points-section">
-            
+
             <div class="product-container">
                 <div class="h3-container">
                     <h3>Buy points</h3>
@@ -105,7 +115,7 @@
                 <input type="text" name="buy-price" id="points-buy-price" readonly>
                 <button class="buy-button">Buy</button>
             </div>
-            
+
             <div class="product-container">
                 <div class="h3-container">
                     <h3>Sell points for a fair price</h3>
@@ -116,7 +126,7 @@
                 <input type="text" name="sell-price" id="points-sell-price" readonly min="0">
                 <button class="sell-button">Sell</button>
             </div>
-            
+
             <div class="product-container">
                 <div class="h3-container">
                     <h3>Request <span id="adr4">Adrenaline 4</span> map completion on your account</h3>
@@ -125,9 +135,9 @@
                 <input type="text" name="account-name" id="account-name">
                 <button class="adr4-button">Hook</button>
             </div>
-            
+
         </section>
-        
+
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <p>Subscribe to get free advice about acquiring Teeworlds Points</p>
             <label for="email">Your email:</label>
@@ -148,6 +158,7 @@
         </p>
     </footer>
 
+    <!-- Script to dynamically change points buy and sell prices -->
     <script>
         function onBuyChange() {
             let x = document.getElementById("points-buy-amount").value * 9.99;
@@ -160,6 +171,6 @@
         }
     </script>
 
-    </body>
+</body>
 
 </html>
