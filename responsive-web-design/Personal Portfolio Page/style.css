@@ -123,7 +123,7 @@ main {
       rgba(10, 10, 10, 1) 0%,
       rgba(100, 100, 150, 0.75) 70%,
       rgba(225, 225, 255, 1) 100%),
-    url("https://raw.githubusercontent.com/Shadou1/freecodecamp-project-files/master/Responsive%20Web%20Design/Personal%20Portfolio%20Page/welcome_back.png");
+    url("https://raw.githubusercontent.com/Shadou1/freecodecamp-projects/master/responsive-web-design/Personal%20Portfolio%20Page/welcome_back.png");
 
   background-size: cover;
   background-position: center;
@@ -350,7 +350,7 @@ img {
     rgba(225, 225, 255, 1) 0%,
     rgba(100, 100, 150, 0.75) 70%,
     rgba(10, 10, 10, 1) 100%),
-  url("https://raw.githubusercontent.com/Shadou1/freecodecamp-project-files/master/Responsive%20Web%20Design/Personal%20Portfolio%20Page/contacts_back.png");
+  url("https://raw.githubusercontent.com/Shadou1/freecodecamp-projects/master/responsive-web-design/Personal%20Portfolio%20Page/contacts_back.png");
 
   background-size: cover;
   background-position: center;
